@@ -13,3 +13,5 @@
 > import java.util.{HashMap => _, _} // 引入了util包的所有成员,引入是不用util.HashSet,直接HashSet,但是HashMap被隐藏了;不能使用
 - 注意
 > 默认情况下，Scala 总会引入 java.lang._ 、 scala._ 和 Predef._，这里也能解释，为什么以scala开头的包，在使用时都是省去scala.的。
+- ^ 运算
+> 1-1 0 0-1 1 0-0 0  不一样 得到结果为 1
