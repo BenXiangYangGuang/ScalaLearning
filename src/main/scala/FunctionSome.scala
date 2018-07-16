@@ -7,7 +7,7 @@
     一种是传名调用，这种调用方式在函数调用时并不直接计算参数的具体值，
   * Refer To:
   */
-object Test {
+object FunctionSome {
   def main(args: Array[String]): Unit = {
     //1.一种列子
     delayed(time())
@@ -17,7 +17,7 @@ object Test {
     //函数-可变参数: 即 参数列表,最后一个参数的个数是不固定的但类型是相同的,最后一个参数变为可变参数,用 * 来表示
     printStrings(11,"Runoob", "Scala", "Python")
     //递归函数1111
-    println( "10 的阶乘的结果:" + factorial(10))
+    println( "10 的阶乘的结果:" + factorial(3))
     //高阶函数:接受一个或多个参数的函数,或者输出一个函数的函数;叫做高阶函数
     //高阶函数可以,调用同为参数的变量
     println(apply(layout,10))
