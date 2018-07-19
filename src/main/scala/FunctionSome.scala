@@ -1,3 +1,5 @@
+import java.util.Date
+
 /**
   * Author: wewe
   * Date:  18-7-15 上午10:01
@@ -27,8 +29,26 @@ object FunctionSome {
 //    println( factorialQianTao(1) )
 //    println( factorialQianTao(2) )
 //    println( factorialQianTao(3) )
+    //偏应用函数; 把一个函数赋值给一个变量;复制给变量的时候复制给默认的date
+    val date = new Date
+    val logWithDateBound = log(date,_: String)
 
+    logWithDateBound("message11")
+    Thread.sleep(1000)
+    logWithDateBound("message11")
 
+    //柯里化(currying)函数
+    //def add(x:Int,y:Int)=x+y  转换为 def add(x:Int)(y:Int) = x + y
+    //那么我们应用的时候，应该是这样用：add(1)(2),最后结果都一样是3，这种方式（过程）就叫柯里化。
+    val str1:String = "Hello, "
+    val str2:String = "Scala!"
+    println( "str1 + str2 = " +  strcat(str1)(str2) )
+
+  }
+
+  //柯里化(currying)函数
+  def strcat(s1: String)(s2: String) = {
+    s1 + s2
   }
 
   def factorialQianTao(i: Int): Int = {
@@ -104,4 +124,10 @@ object FunctionSome {
       println(" x :" + x)
     }
   }
+
+  //偏应用函数
+  def log(date: Date,message: String) = {
+    println(date + "-------------" + message)
+  }
+
 }
