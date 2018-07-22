@@ -1,3 +1,5 @@
+package newbies
+
 /**
   * Author: wewe
   * Date:  18-7-16 下午9:28

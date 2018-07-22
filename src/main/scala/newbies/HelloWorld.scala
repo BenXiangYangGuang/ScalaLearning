@@ -1,3 +1,5 @@
+package newbies
+
 import scala.util.control.Breaks
 
 /**

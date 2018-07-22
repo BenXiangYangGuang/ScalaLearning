@@ -1,3 +1,5 @@
+package newbies
+
 import java.util.Date
 
 /**
