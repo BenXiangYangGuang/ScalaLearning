@@ -36,8 +36,8 @@ object HelloWorld {
     var aa = 0
     var bb = 0
 
-    var numList1 = List(1,2,3,4,5)
-    var numList2 = List(11,12,13)
+    val numList1 = List(1,2,3,4,5)
+    val numList2 = List(11,12,13)
     val outer = new Breaks
     val inner = new Breaks
 

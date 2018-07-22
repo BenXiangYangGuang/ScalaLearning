@@ -1,6 +1,7 @@
 package newbies
 
 import java.util.Date
+import math._
 
 /**
   * Author: wewe
@@ -13,6 +14,8 @@ import java.util.Date
   */
 object FunctionSome {
   def main(args: Array[String]): Unit = {
+    //Random 是一个单例的随机数生成对象
+    BigInt.probablePrime(100,scala.util.Random)
     //1.一种列子
     delayed(time())
     //2.第二种列子
