@@ -49,6 +49,23 @@ object FunctionSome {
     val str2:String = "Scala!"
     println( "str1 + str2 = " +  strcat(str1)(str2) )
 
+    //闭包
+    //闭包是一种函数;可以访问本函数外的其他变量的函数
+    val factor = 3
+    val multiplier = (i:Int) => i * factor
+    println( "muliplier(1) value = " + multiplier(1) )
+    println( "muliplier(2) value = " +  multiplier(2) )
+    //scala 中字符串是不可修改的,如果你修改之后会产生一个新的字符串
+    var str :String= "bukebian"
+    println(str)
+    str = "kebian"
+    println(str)
+    var floatVar = 12.456
+    var intVar = 2000
+    var stringVar = "菜鸟教程!"
+
+    var fs = println("浮点型变量为: %f, 整型变量 %d , 字符串为 %s ",floatVar,intVar,stringVar)
+
   }
 
   //柯里化(currying)函数
