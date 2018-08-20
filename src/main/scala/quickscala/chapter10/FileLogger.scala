@@ -15,7 +15,7 @@ trait FileLogger {
   //构造器的一部分
   out.print("# " + new java.util.Date().toString)
 
-  def log(msg: String): Unit = {
+  def log(msg: String) {
     out.print(msg)
     out.flush()
   }
