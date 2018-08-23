@@ -22,10 +22,10 @@ object TestExecute {
 
     // 调用acct2 取款 log信息
     //Wed Aug 15 0...
-
+/*
     val acct1 = new SavingAccount2 with ConsoleLogger2 with TimeStampLogger with ShortLogger
     val acct2 = new SavingAccount2 with ConsoleLogger2 with ShortLogger with TimeStampLogger
     acct1.log("acct1 shortlogger timestamaplogger")
-    acct2.log("acct2 timestamaplogger shortlogger")
+    acct2.log("acct2 timestamaplogger shortlogger")*/
   }
 }

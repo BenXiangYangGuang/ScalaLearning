@@ -23,6 +23,6 @@ trait FileLogger extends Logger{
   }
 
   def main(args: Array[String]): Unit = {
-    val acct = new {val filename = "myapp.log"} with SavingAccount with FileLogger
+//    val acct = new {val filename = "myapp.log"} with SavingAccount with FileLogger
   }
 }
