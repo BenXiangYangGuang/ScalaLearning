@@ -6,7 +6,7 @@ package quickscala.chapter10
   * Description:  abstract 修饰
   * Refer To:
   */
-trait TimeStampLogger extends Logger{
+trait TimeStampLogger3 extends Logger{
   abstract override def log(msg: String) {
     super.log(new java.util.Date() + " " + msg)
   }
